@@ -1,0 +1,11 @@
+.total {
+    display: block;
+    justify-content: center;
+    max-height: 100vh;
+    overflow: scroll;
+    width: 100vw;
+}
+
+.statistics-table {
+    width: 100%;
+}

@@ -1,0 +1,22 @@
+.App {
+    display: flex;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body,
+input {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-stretch: normal;
+    color: rgb(42, 40, 40);
+
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}

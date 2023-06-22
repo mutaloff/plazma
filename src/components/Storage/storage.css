@@ -1,0 +1,7 @@
+.storage-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(225, 236, 236);
+}

@@ -1,0 +1,141 @@
+input {
+    font-size: 18px;
+    padding: 8px 10px 7px 5px;
+    display: block;
+    width: 360px;
+    background-color: #FAFAFA;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+.group {
+    min-height: 40px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 8px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.input:focus~.label,
+.input:valid~.label {
+    top: -16px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+.noph {
+    font-size: 14px;
+    color: #5264AE;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: -16px;
+}
+
+
+.bar {
+    position: relative;
+    display: block;
+    width: 360px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+
+input:focus~.bar:before,
+input:focus~.bar:after {
+    width: 50%;
+}
+
+.ph {
+    position: absolute;
+    top: 0px;
+}
+
+.input {
+    position: relative;
+    background-color: transparent;
+}
+
+.input:focus::placeholder {
+    color: transparent;
+}
+
+.input:focus~.highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+.autocomplete {
+    position: absolute;
+    font-size: 11px;
+    right: 0px;
+    top: 11px;
+}

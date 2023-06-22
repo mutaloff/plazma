@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "plazma",
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
